@@ -1,0 +1,205 @@
+/* Fondo general de la sección principal */
+.main-container {
+  background-color: #bfa1db;
+  min-height: 80vh;
+  padding-bottom: 40px;
+}
+
+/* Banner morado del título */
+.text-destacados {
+  background-color: #8b3dff;
+  color: white;
+  padding: 10px 0;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* Contenedor de las tarjetas */
+.contenedor-caja {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.caja-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+}
+
+.periferico-img-container {
+  background: white;
+  border: 3px solid #8b3dff;
+  border-radius: 12px;
+  width: 100%;
+  height: 240px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.periferico-img-container img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.marca {
+  background-color: #3f0071;
+  color: white;
+  width: 100%;
+  text-align: center;
+  margin-top: 8px;
+  margin-bottom: 4px;
+  font-weight: bold;
+  padding: 4px;
+  border-radius: 4px;
+}
+
+.desc-corta {
+  background-color: #a48bbd;
+  color: white;
+  width: 100%;
+  text-align: center;
+  padding: 6px;
+  margin-bottom: 4px;
+  font-size: 0.85rem;
+  border-radius: 4px;
+}
+
+.btn-agregar {
+  background-color: #a333c8 !important;
+  color: white !important;
+  border: none !important;
+  width: 100%;
+  padding: 8px;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+/* Banner de la barra de anuncios superior */
+.anuncios-bar {
+  background-color: #120024;
+  color: #ffffff;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+/* Contenedor principal morado claro */
+.main-container {
+  background-color: #bfa1db;
+  min-height: 85vh;
+  padding-bottom: 40px;
+}
+
+/* Franja morada para el título "PRODUCTOS DESTACADOS" */
+.text-destacados {
+  background-color: #8b3dff;
+  color: white;
+  text-align: center;
+  padding: 12px 0;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.text-destacados h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+/* Grilla / Contenedor flex de los productos */
+.contenedor-caja {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  padding: 30px 15px;
+  flex-wrap: wrap;
+}
+
+/* Tarjeta individual */
+.caja-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 290px;
+}
+
+/* Marco blanco de la imagen del producto con borde violeta */
+.periferico-img-container {
+  background: #ffffff;
+  border: 3px solid #8b3dff;
+  border-radius: 12px;
+  width: 100%;
+  height: 240px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.periferico-img-container:hover {
+  transform: scale(1.02);
+}
+
+.periferico-img-container img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+/* Bloque oscuro para la Marca */
+.marca {
+  background-color: #3f0071;
+  color: #ffffff;
+  width: 100%;
+  text-align: center;
+  margin-top: 8px;
+  margin-bottom: 4px;
+  font-weight: bold;
+  padding: 6px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+/* Bloque morado medio para Descripción y Precio */
+.desc-corta {
+  background-color: #a48bbd;
+  color: #ffffff;
+  width: 100%;
+  text-align: center;
+  padding: 8px;
+  margin-bottom: 4px;
+  font-size: 0.82rem;
+  border-radius: 4px;
+  min-height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Botón violeta de agregar al carrito */
+.btn-agregar {
+  background-color: #a333c8 !important;
+  color: #ffffff !important;
+  border: none !important;
+  width: 100%;
+  padding: 8px;
+  font-weight: bold;
+  border-radius: 4px;
+  margin-top: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.btn-agregar:hover {
+  background-color: #8b28ac !important;
+}
