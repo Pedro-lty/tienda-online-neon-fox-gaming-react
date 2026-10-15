@@ -4,13 +4,13 @@ import Text from '../atoms/Text';
 import Button from '../atoms/Button';
 import { useNavigate } from 'react-router-dom';
 
-function ProductCard({ product }) {
+function ProductCard({ product, alAgregarAlCarrito }) {
   const navigate = useNavigate();
 
   return (
     <div className="caja-item">
-      <div 
-        className="periferico-img-container" 
+      <div
+        className="periferico-img-container"
         onClick={() => navigate(`/products/${product.id}`)}
       >
         <Image src={product.image} alt={product.name} className="img-link" />
@@ -22,7 +22,10 @@ function ProductCard({ product }) {
         PRECIO: ${product.price?.toLocaleString('es-CL')}
       </Text>
 
-      <Button className="btn-agregar">
+      <Button
+        className="btn-agregar"
+        onClick={() => alAgregarAlCarrito(product)}
+      >
         Agregar al carrito
       </Button>
     </div>

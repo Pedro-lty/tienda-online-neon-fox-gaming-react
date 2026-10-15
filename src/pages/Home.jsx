@@ -6,16 +6,20 @@ import { products } from '../data/products.js';
 
 import '../styles/pages/home/home.css';
 
-function Home() {
+function Home({ alAgregarAlCarrito, totalItemsCount = 0 }) {
   return (
-    <PlantillaBase>
+    <PlantillaBase totalItemsCount={totalItemsCount}>
       <div className="text-destacados my-4">
         <Text variant="h2" className="text-center">PRODUCTOS DESTACADOS</Text>
       </div>
 
       <div className="contenedor-caja d-flex justify-content-center flex-wrap gap-3">
         {products.map((product) => (
-          <ProductCard key={product.id} product={product} />
+          <ProductCard
+            key={product.id}
+            product={product}
+            alAgregarAlCarrito={alAgregarAlCarrito}
+          />
         ))}
       </div>
     </PlantillaBase>
