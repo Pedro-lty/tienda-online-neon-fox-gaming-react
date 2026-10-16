@@ -1,5 +1,6 @@
 import React from 'react';
 import PlantillaAdmin from '../../components/template/PlantillaAdmin';
+import FormularioUsuario from '../../components/organisms/FormularioUsuario';
 
 const AdminEditarUsuario = () => {
     return (
@@ -11,31 +12,10 @@ const AdminEditarUsuario = () => {
                 </div>
                 <a className="boton secundario" href="/admin/usuarios">Volver</a>
             </div>
-            <form className="formulario">
-                <div className="grupo-formulario">
-                    <label htmlFor="nombre">Nombre completo</label>
-                    <input id="nombre" type="text" defaultValue="x x" required />
-                </div>
-                <div className="grupo-formulario">
-                    <label htmlFor="correo">Correo</label>
-                    <input id="correo" type="email" defaultValue="x@gmail.com" required />
-                </div>
-                <div className="grupo-formulario">
-                    <label htmlFor="rol">Rol</label>
-                    <select id="rol" defaultValue="Administrador" required>
-                        <option value="Administrador">Administrador</option>
-                        <option value="Cliente">Cliente</option>
-                    </select>
-                </div>
-                <div className="grupo-formulario">
-                    <label htmlFor="estado">Estado</label>
-                    <select id="estado" defaultValue="Activo">
-                        <option value="Activo">Activo</option>
-                        <option value="Inactivo">Inactivo</option>
-                    </select>
-                </div>
-                <button className="boton" type="submit">Guardar cambios</button>
-            </form>
+            
+            {/* Inyectamos el organismo completo del formulario */}
+            <FormularioUsuario />
+            
         </PlantillaAdmin>
     );
 };
