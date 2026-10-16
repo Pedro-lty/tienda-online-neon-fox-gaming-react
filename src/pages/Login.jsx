@@ -2,6 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import Button from '../components/atoms/Button';
 import Text from '../components/atoms/Text';
+import '../styles/pages/login-register.css';
 
 function Login() {
   const navigate = useNavigate();
