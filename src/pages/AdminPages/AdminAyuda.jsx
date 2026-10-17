@@ -1,5 +1,5 @@
 import React from 'react';
-import PlantillaAdmin from '../components/template/PlantillaAdmin';
+import PlantillaAdmin from "../../components/template/PlantillaAdmin";
 
 const AdminAyuda = () => {
     return (

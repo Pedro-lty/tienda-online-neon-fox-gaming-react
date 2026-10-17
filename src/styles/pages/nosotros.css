@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&display=swap');
+
+/* Wrapper principal que otorga fondo lila full width */
+.nosotros-page-wrapper {
+  width: 100%;
+  min-height: 80vh;
+  background-color: #bdabcf;
+  margin: 0;
+  padding: 10px 0 50px 0;
+  font-family: "Changa One", sans-serif;
+  box-sizing: border-box;
+}
+
+/* Contenedor principal de la página Nosotros */
+.nosotros-page-wrapper .nosotros-main-container {
+  max-width: 1100px;
+  width: 90%;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  box-sizing: border-box;
+}
+
+/* Tarjetas semitransparentes oscuras */
+.nosotros-page-wrapper .hero-section, 
+.nosotros-page-wrapper .info-section, 
+.nosotros-page-wrapper .gif-section {
+  background-color: rgba(20, 15, 35, 0.75);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* Tipografía */
+.nosotros-page-wrapper h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: #e0aaff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  font-family: "Changa One", sans-serif;
+}
+
+.nosotros-page-wrapper h3 {
+  font-size: 24px;
+  margin: 20px 0 10px 0;
+  color: #c77dff;
+  font-family: "Changa One", sans-serif;
+}
+
+.nosotros-page-wrapper p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #e0e0e0;
+  font-family: "Changa One", sans-serif;
+}
+
+/* Lista de viñetas */
+.nosotros-page-wrapper .info-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0;
+  text-align: left;
+  display: inline-block;
+}
+
+.nosotros-page-wrapper .info-section li {
+  font-size: 16px;
+  margin-bottom: 10px;
+  padding-left: 25px;
+  position: relative;
+  line-height: 1.5;
+  color: #ffffff;
+  font-family: "Changa One", sans-serif;
+}
+
+.nosotros-page-wrapper .info-section li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #9d4edd;
+}
+
+/* Imágenes */
+.nosotros-page-wrapper .responsive-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-top: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  display: inline-block;
+}
+
+/* Adaptación móvil */
+@media (max-width: 768px) {
+  .nosotros-page-wrapper .nosotros-main-container {
+    width: 95%;
+    margin: 20px auto;
+    gap: 20px;
+  }
+
+  .nosotros-page-wrapper .hero-section, 
+  .nosotros-page-wrapper .info-section, 
+  .nosotros-page-wrapper .gif-section {
+    padding: 20px 15px;
+    border-radius: 15px;
+  }
+
+  .nosotros-page-wrapper h2 {
+    font-size: 24px;
+  }
+
+  .nosotros-page-wrapper h3 {
+    font-size: 20px;
+  }
+
+  .nosotros-page-wrapper p, 
+  .nosotros-page-wrapper .info-section li {
+    font-size: 14px;
+  }
+
+  .nosotros-page-wrapper .info-section ul {
+    width: 100%;
+  }
+}
