@@ -4,8 +4,7 @@ import PlantillaBase from '../components/template/PlantillaBase';
 import ProductCard from '../components/organisms/ProductCard';
 import Text from '../components/atoms/Text';
 import { products } from '../data/products.js';
-
-import '../styles/pages/home/home.css';
+import '../styles/pages/home.css';
 
 function Home({ alAgregarAlCarrito, totalItemsCount = 0 }) {
   const productosDestacados = products.filter(
@@ -15,7 +14,7 @@ function Home({ alAgregarAlCarrito, totalItemsCount = 0 }) {
   return (
     <PlantillaBase totalItemsCount={totalItemsCount}>
       <main className="main-container">
-        <Carousel id="carouselExampleIndicators" fade={false}>
+        <Carousel id="carouselExampleIndicators" className="home-carousel" fade={false}>
           <Carousel.Item className="d-item">
             <img
               className="d-block w-100 d-img"

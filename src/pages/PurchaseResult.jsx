@@ -4,7 +4,7 @@ import { Link, Navigate, useLocation, useParams } from 'react-router-dom';
 import Button from '../components/atoms/Button';
 import Image from '../components/atoms/Image';
 import PlantillaBase from '../components/template/PlantillaBase';
-import '../styles/pages/checkout/checkout.css';
+import "../styles/pages/checkout.css";
 
 function PurchaseResult({ totalItemsCount = 0, alLimpiar }) {
   const { estado } = useParams();

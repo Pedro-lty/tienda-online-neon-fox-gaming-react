@@ -5,7 +5,7 @@ import Button from '../components/atoms/Button';
 import Image from '../components/atoms/Image';
 import PaymentSimulation from '../components/organisms/PaymentSimulation';
 import PlantillaBase from '../components/template/PlantillaBase';
-import '../styles/pages/checkout/checkout.css';
+import "../styles/pages/checkout.css";
 
 const comunasPorRegion = {
   'Región de Arica y Parinacota': ['Arica', 'Putre'],

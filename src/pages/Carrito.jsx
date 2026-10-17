@@ -5,7 +5,7 @@ import Button from '../components/atoms/Button';
 import Image from '../components/atoms/Image';
 import TablaCarrito from '../components/organisms/TablaCarrito';
 import { products } from '../data/products.js';
-import '../styles/pages/carrito/carrito.css';
+import '../styles/pages/carrito.css';
 
 function Carrito({
     itemsCarrito,

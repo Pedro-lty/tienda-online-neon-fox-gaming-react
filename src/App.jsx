@@ -4,18 +4,19 @@ import Home from './pages/Home';
 import Products from './pages/Products';
 import ProductDetail from './pages/ProductsDetail';
 import Login from './pages/Login';
+import Register from './pages/Register';
 import Carrito from './pages/Carrito';
 import Checkout from './pages/Checkout';
 import PurchaseResult from './pages/PurchaseResult';
 import Nosotros from './pages/Nosotros';
 import Blogs from './pages/Blogs';
+import { Caso1 } from './pages/Caso1';
+import { Caso2 } from './pages/Caso2';
 import Contactos from './pages/Contactos';
 
 function App() {
-  // Estado global del carrito (inicia vacío)
   const [itemsCarrito, setItemsCarrito] = useState([]);
 
-  // Agregar al carrito desde cualquier lugar
   const agregarAlCarrito = (producto) => {
     setItemsCarrito((prev) => {
       const existe = prev.find((item) => item.id === producto.id);
@@ -30,7 +31,6 @@ function App() {
     });
   };
 
-  // Modificar cantidad (+ / -)
   const actualizarCantidad = (id, delta) => {
     setItemsCarrito((prev) =>
       prev.map((item) => {
@@ -43,17 +43,14 @@ function App() {
     );
   };
 
-  // Eliminar producto individual
   const eliminarDelCarrito = (id) => {
     setItemsCarrito((prev) => prev.filter((item) => item.id !== id));
   };
 
-  // Vaciar carrito
   const limpiarCarrito = useCallback(() => {
     setItemsCarrito([]);
   }, []);
 
-  // Cantidad total de items acumulados (para el botón/badge del Navbar)
   const totalItemsCount = itemsCarrito.reduce(
     (acc, item) => acc + item.quantity,
     0
@@ -90,12 +87,24 @@ function App() {
       />
       <Route path="/login" element={<Login />} />
       <Route
+        path="/register"
+        element={<Register totalItemsCount={totalItemsCount} />}
+      />
+      <Route
         path="/nosotros"
         element={<Nosotros totalItemsCount={totalItemsCount} />}
       />
       <Route
         path="/blogs"
         element={<Blogs totalItemsCount={totalItemsCount} />}
+      />
+      <Route
+        path="/caso1"
+        element={<Caso1 totalItemsCount={totalItemsCount} />}
+      />
+      <Route
+        path="/caso2"
+        element={<Caso2 totalItemsCount={totalItemsCount} />}
       />
       <Route
         path="/contactos"
