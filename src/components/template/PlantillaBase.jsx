@@ -4,11 +4,12 @@ import Footer from '../organisms/Footer';
 
 function PlantillaBase({ children, totalItemsCount = 0 }) {
   return (
-    <>
+    <div style={{ width: '100%', minWidth: '100%', padding: 0, margin: 0 }}>
       <Navbar totalItemsCount={totalItemsCount} />
-      <main>{children}</main>
+      {/* Sin etiquetas de container aquí para que el contenido sea 100% libre */}
+      {children}
       <Footer />
-    </>
+    </div>
   );
 }
 

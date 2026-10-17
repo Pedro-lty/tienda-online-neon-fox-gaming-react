@@ -1,0 +1,55 @@
+/* Tarjeta de producto pequeñez izquierda */
+.product-card-sm {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+
+.img-placeholder {
+  background-color: #e9ecef;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.style-cart-img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+/* Tabla del Carrito */
+.cart-table th {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #333;
+  border-bottom: 2px solid #dee2e6;
+}
+
+.cart-item-img {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+  background-color: #f8f9fa;
+  border-radius: 4px;
+  padding: 2px;
+}
+
+.btn-qty {
+  width: 26px;
+  height: 26px;
+  padding: 0;
+  font-weight: bold;
+  font-size: 0.8rem;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fs-7 {
+  font-size: 0.82rem;
+}

@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&display=swap');
+
+.blogs-page-wrapper {
+  width: 100% !important;
+  max-width: 100% !important;
+  min-height: 80vh;
+  margin: 0 !important;
+  padding: 30px 20px 50px !important;
+  background-color: #bdabcf;
+  font-family: "Changa One", sans-serif;
+  box-sizing: border-box;
+}
+
+.blogs-page-wrapper .main-container {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  background-color: #bdabcf;
+  font-family: "Changa One", sans-serif;
+  box-sizing: border-box;
+}
+
+.blogs-page-wrapper .section-title {
+  text-align: center;
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+  font-family: "Changa One", sans-serif;
+}
+
+.blogs-page-wrapper .blog-list {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.blogs-page-wrapper .blog-card-horizontal {
+  background-color: #312046;
+  border: 3px solid #505092;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+  gap: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.blogs-page-wrapper .blog-card-horizontal:hover {
+  border-color: #7242a3;
+  box-shadow: 0 0 15px rgba(183, 0, 255, 0.3);
+}
+
+.blogs-page-wrapper .blog-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.blogs-page-wrapper .blog-info h2 {
+  color: #fff;
+  font-size: 1.8rem;
+  font-family: "Changa One", sans-serif;
+  margin: 0;
+}
+
+.blogs-page-wrapper .blog-info p {
+  color: #ddd;
+  line-height: 1.5;
+  margin: 0;
+  font-family: "Changa One", sans-serif;
+}
+
+.blogs-page-wrapper .ver-caso-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #8a2be2;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border: 2px solid #463258;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-family: "Changa One", sans-serif;
+}
+
+.blogs-page-wrapper .ver-caso-btn:hover {
+  background-color: rgb(160, 29, 248);
+  color: white;
+  border-color: #a14af3;
+}
+
+.blogs-page-wrapper .blog-image-container {
+  flex: 1;
+  max-width: 50%;
+  width: 100%;
+}
+
+.blogs-page-wrapper .blog-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid #8a2be2;
+  display: block;
+}
+
+.caso-detail-wrapper {
+  width: 100% !important;
+  max-width: 100% !important;
+  min-height: 85vh;
+  margin: 0 !important;
+  padding: 40px 20px 60px !important;
+  background-color: #bdabcf;
+  font-family: "Changa One", sans-serif;
+  box-sizing: border-box;
+}
+
+.caso-detail-container {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #312046;
+  border: 3px solid #505092;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  box-sizing: border-box;
+  color: #ffffff;
+}
+
+.caso-detail-container .btn-volver {
+  display: inline-block;
+  padding: 8px 18px;
+  background-color: #8a2be2;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  border: 2px solid #463258;
+  border-radius: 8px;
+  margin-bottom: 25px;
+  font-family: "Changa One", sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+.caso-detail-container .btn-volver:hover {
+  background-color: rgb(160, 29, 248);
+  color: #ffffff;
+}
+
+.caso-detail-container h2 {
+  font-size: 2.2rem;
+  color: #ffffff;
+  margin-bottom: 25px;
+  font-family: "Changa One", sans-serif;
+}
+
+.caso-detail-container .img-box {
+  width: 100%;
+  margin-bottom: 25px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 2px solid #8a2be2;
+}
+
+.caso-detail-container .img-box img {
+  width: 100%;
+  max-height: 420px;
+  object-fit: cover;
+  display: block;
+}
+
+.caso-detail-container .contenido-texto p {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #eeeeee;
+  margin-bottom: 20px;
+  font-family: "Changa One", sans-serif;
+}
+
+.caso-detail-container .contenido-texto p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .blogs-page-wrapper .blog-card-horizontal {
+    flex-direction: column-reverse;
+  }
+
+  .blogs-page-wrapper .blog-image-container {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .caso-detail-container {
+    padding: 20px 15px;
+  }
+
+  .caso-detail-container h2 {
+    font-size: 1.6rem;
+  }
+}

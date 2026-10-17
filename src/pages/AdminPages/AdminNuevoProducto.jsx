@@ -1,16 +1,23 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import PlantillaAdmin from '../../components/template/PlantillaAdmin';
+import EncabezadoAdmin from '../../components/admin/EncabezadoAdmin';
+import ProductoForm from '../../components/admin/ProductoForm';
+import { guardarProducto } from '../../services/adminData';
 
 const AdminNuevoProducto = () => {
+    const navigate = useNavigate();
+
     return (
         <PlantillaAdmin>
-            <div className="titulo-pagina">
-                <h1>Crear Nuevo Producto</h1>
-                <a className="boton secundario" href="/admin/productos">Volver</a>
-            </div>
-            <section className="contenido">
-                <p>Formulario para ingresar un nuevo producto al inventario.</p>
-            </section>
+            <EncabezadoAdmin titulo="Nuevo producto" subtitulo="Se agregará al catálogo de la tienda." volverA="/admin/productos" />
+            <ProductoForm
+                textoBoton="Crear producto"
+                onSubmit={(datos) => {
+                    guardarProducto(datos);
+                    navigate('/admin/productos');
+                }}
+            />
         </PlantillaAdmin>
     );
 };
